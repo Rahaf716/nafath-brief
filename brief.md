@@ -20,10 +20,19 @@ The OWASP Mobile Application Security Verification Standard (MASVS) is a securit
 Resource: OWASP Mobile Application Security Verification Standard (MASVS) - https://mas.owasp.org/MASVS/
 
 ## Networking
+BGP route hijacking occurs when a network falsely announces it originates an IP prefix, so traffic may be diverted through it. RPKI lets address holders publish signed Route Origin Authorizations naming which autonomous system may originate a prefix. Routers can mark a route valid, invalid, or not found, and operators may filter invalid ones. However, RPKI origin validation does not protect against AS-in-the-middle attacks or provide any path validation. It only verifies the origin.
+
+Resource: RFC 6811 - BGP Prefix Origin Validation - https://www.rfc-editor.org/rfc/rfc6811
 
 ## Cybersecurity
+Log4Shell (CVE-2021-44228) was a flaw in Apache Log4j 2 (log4j-core). Its JNDI features did not protect against attacker-controlled LDAP endpoints, so an attacker who could control log messages could execute arbitrary code. NVD rates it CVSS 10.0 Critical: exploitable over the network, with low complexity and no privileges or user interaction. Version 2.15.0 disabled the behavior by default; 2.16.0, plus 2.12.2, 2.12.3 and 2.3.1, removed the functionality entirely.
+
+Resource: NVD - CVE-2021-44228 Detail - https://nvd.nist.gov/vuln/detail/CVE-2021-44228
 
 ## Data
+A Software Bill of Materials (SBOM) is a formal record containing the details and supply chain relationships of components used in building software. NTIA lists seven minimum data fields: supplier name, component name, component version, other unique identifiers, dependency relationship, author of SBOM data, and timestamp. It also requires automation support, meaning machine-readable formats, and defined practices such as frequency, depth, distribution, and access control.
+
+Resource: The Minimum Elements For a Software Bill of Materials (SBOM) - https://www.ntia.gov/sites/default/files/publications/sbom_minimum_elements_report_0.pdf
 
 ## Misconception in My Track
 
