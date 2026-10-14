@@ -35,5 +35,7 @@ A Software Bill of Materials (SBOM) is a formal record containing the details an
 Resource: The Minimum Elements For a Software Bill of Materials (SBOM) - https://www.ntia.gov/sites/default/files/publications/sbom_minimum_elements_report_0.pdf
 
 ## Misconception in My Track
+A common belief is that Log4Shell affects every Apache logging library, including log4net and log4cxx. The correct version is that it is specific to the Java library log4j-core, in versions 2.0-beta9 through 2.15.0, excluding the security releases 2.12.2, 2.12.3 and 2.3.1. Organizations should therefore check which logging component and version they actually run, instead of assuming all logging libraries are vulnerable. Evidence: NVD, CVE-2021-44228 Detail, Description section: "this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects."
 
 ## Open Question
+A common belief is that Log4Shell affects every Apache logging library, including log4net and log4cxx. The correct version is that it is specific to the Java library log4j-core, in versions 2.0-beta9 through 2.15.0, excluding the security releases 2.12.2, 2.12.3 and 2.3.1. Organizations should therefore check which logging component and version they actually run, instead of assuming all logging libraries are vulnerable. Evidence: NVD, CVE-2021-44228 Detail, Description section: "this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects."
